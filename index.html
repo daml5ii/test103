@@ -7,15 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-       hi from local <br>
-       and remote   
-       this is the new branch   
-    </h1>
+    
 
-    <div class="center-frame" aria-label="Noor centered animated frame">
-        <span>Noor sayes</span>
-    </div>
+   
 
     <div class="snake-wrapper" aria-label="Animated snake">
         <div class="snake">
@@ -29,6 +23,26 @@
             <div class="segment head"></div>
         </div>
     </div>
+
+    <!-- START OF CHECKLIST -->
+    <div class="site-checklist">
+        <div class="checklist-header">
+            <h3>✅ Things We Need To Do:</h3>
+            <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+        </div>
+        <div class="add-task-container">
+            <input type="text" id="taskInput" class="task-input" placeholder="Add a new task..." />
+            <button class="add-btn" id="addBtn">Add</button>
+        </div>
+        <ul class="checklist-list" id="taskList">
+            <li class="task-item">
+                <input type="checkbox" class="task-checkbox" />
+                <span class="task-text">Sample task</span>
+                <button class="delete-btn" title="Delete task">🗑️</button>
+            </li>
+        </ul>
+    </div>
+    <!-- END OF CHECKLIST -->
 
     <script src="app.js"></script>
 </body>
